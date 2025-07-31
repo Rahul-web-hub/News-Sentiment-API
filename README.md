@@ -39,7 +39,7 @@ pip install fastapi uvicorn requests beautifulsoup4 textblob pydantic sqlite3
 
 Start the API server:
 ```bash
-python main.py
+uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
 The service will be available at `http://localhost:8000`
